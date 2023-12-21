@@ -1,0 +1,64 @@
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+#conteneur{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 650px;
+    margin: auto;
+}
+#legende{
+    text-align: center;
+    color: #999;
+}
+#tableau{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 7px 7px 7px #999;
+}
+.cellule{
+    padding: 12px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+}
+.bordDroit{
+    border-right: 1px solid black;
+}
+.bordBas{
+    border-bottom: 1px solid black;
+}
+.entete{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+.couleur1{
+    background-color: #fc0;
+}
+.couleur2{
+    background-color: #f90;
+}
+.bordRadiusG{
+    border-top-left-radius: 10px;
+}
+.bordRadiusD{
+    border-top-right-radius: 10px;
+}
+
+@media screen and (max-width:650px) {
+    #conteneur{
+        font-size: 12px;
+        width: 80%;
+    }
+    #tableau{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cacher{
+        display: none;
+    }
+}
